@@ -37,6 +37,7 @@ $(document).ready(function(){
         t = setInterval("showAuto()", 4000);
         $("#banner").hover(function(){clearInterval(t)}, function(){t = setInterval("showAuto()", 4000);});
     });
+////
 	function showAuto(){
       n = n >=(count - 1) ? 0 : ++n;
       $("#banner li").eq(n).trigger('click');
